@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", sans-serif;
+  
+  --color-primary: #137fec;
+  --color-primary-dark: #0b5cb5;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+  --color-surface-dark: #1c2632;
+  --color-surface-dark-highlight: #253140;
+  
+  /* About page specific overrides might be needed, or we just use arbitrary values there */
+}
+
+/* Custom Utilities */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.timeline-gradient-line {
+    background: linear-gradient(180deg, #137fec 0%, rgba(19, 127, 236, 0.2) 100%);
+}
+
+/* Material Symbols sizing */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined.fill-current {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
